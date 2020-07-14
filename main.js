@@ -50,7 +50,37 @@ for (let i = 0; i < 10; i++) {
                 break;
         }
     }
+
+
 }
 content.appendChild(div2);
-
 document.body.appendChild(content);
+
+buttons[0].onclick=calc("0");
+buttons[1].onclick=calc("1");
+buttons[2].onclick=calc("2");
+buttons[3].onclick=calc("3");
+buttons[4].onclick=calc("4");
+buttons[5].onclick=calc("5");
+buttons[6].onclick=calc("6");
+buttons[7].onclick=calc("7");
+buttons[8].onclick=calc("8");
+buttons[9].onclick=calc("9");
+addition.onclick=calc('+');
+subtraction.onclick=calc('-');
+multiplication.onclick=calc('*');
+division.onclick=calc('/');
+//clear.onclick=clr();
+//equals.onclick=exp();
+function calc(num)
+{
+    r.value +=num;
+}
+function clr()
+{
+    r.value="";
+}
+function exp()
+{
+    r.value=eval(r.value);
+}
